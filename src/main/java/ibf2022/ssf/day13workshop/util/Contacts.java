@@ -78,7 +78,7 @@ public class Contacts {
 
     public void getAllContacts(Model model, ApplicationArguments appArgs, String defaultDataDir) {
         Set<String> dataFiles = listFiles(getDataDir(appArgs, defaultDataDir));
-        model.addAttribute("contact", dataFiles);
+        model.addAttribute("contacts", dataFiles);
     }
 
 }
